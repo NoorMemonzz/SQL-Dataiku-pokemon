@@ -2,6 +2,8 @@
 The  SQL code for every file is shared in README file 
 NOTE: Code is same for the tasks but make sure to make changes in saved file names. 
 
+
+SQL_basic_query_file1
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 Dataiku code for file1 basics
 
