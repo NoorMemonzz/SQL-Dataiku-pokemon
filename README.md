@@ -16,3 +16,11 @@ WHERE a."HP" > 100 AND a."Legendary" = true
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
+Analytical_query_file2
+SELECT "Legendary", COUNT(distinct "Name") as "count_poke", 
+avg("HP") as "avg_HP", avg("Attack") as "avg_attack", 
+avg("Defense") as "avg_defense", avg("Speed") as "avg_Speed"
+FROM "NOOR_MEMONZZ_BOSTON_pokemon_noor_memonzz_sql_num"
+Group by "Legendary"
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
