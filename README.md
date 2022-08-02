@@ -24,3 +24,12 @@ FROM "NOOR_MEMONZZ_BOSTON_pokemon_noor_memonzz_sql_num"
 Group by "Legendary"
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
+Looklike_file3
+SELECT "Name", "HP", "Attack", "Legendary",
+abs("HP"-67) as "HP_dist_BF", 
+abs("HP"-93) as "HP_dist_BS",
+abs("Attack"-76) as "Attack_dist_BF",
+abs("Attack"-117) as "Attack_dist_BS",
+sqrt(abs("HP"-67))^2+abs(("Attack"-76)^2) as "dist_to_BF",
+sqrt(abs("HP"-93))^2+abs(("Attack"-117)^2) as "dist_to_BS"
+FROM "NOOR_MEMONZZ_BOSTON_pokemon_noor_memonzz_sql_num"
